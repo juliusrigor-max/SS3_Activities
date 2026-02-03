@@ -1,0 +1,45 @@
+<html>
+   <head> 
+      <title><may program></title>
+   </head>
+   <body>
+
+ 
+
+    <?php
+      $contact ="0963 112 3503";
+      $num1 =50
+      $num2 =100
+      $firstname ="Julius";
+      $lastname = "Rigor";
+
+
+
+    $sum = $ num1 +$num2;
+
+    $sum +=5;
+  
+
+
+
+  ?>
+  <h1>May page!!!</h1>
+    <br>
+    <table borber="1" width"30%">
+        <tr> 
+            <th>Julius</th>
+            <th>brgy santiago</th>
+            <th>0963 112 3503</th>
+       </tr>
+       <tr> 
+           <td><?php echo $Julius   . " "  . $Rigor ?></td>
+           <td></td>
+           <td><?php echo $0963 112 3503
+         </tr>
+       
+
+       </table>
+  
+</body>  
+
+<html>
