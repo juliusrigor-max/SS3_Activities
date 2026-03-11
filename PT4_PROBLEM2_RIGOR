@@ -1,0 +1,54 @@
+count = 0
+largest = 0
+smallest = 0
+
+for i from 100 down to 1
+    for j from 1 to i
+        if j * j == i then
+            display i
+            count = count + 1
+            
+            if largest == 0 then
+                largest = i
+            end if
+            
+            smallest = i
+        end if
+    end for
+end for
+
+display count
+display largest
+display smallest
+Example (C / Java-style Logic)
+#include <stdio.h>
+
+int main() {
+    int i, j;
+    int count = 0;
+    int largest = 0;
+    int smallest = 0;
+
+    for(i = 100; i >= 1; i--) {
+        for(j = 1; j <= i; j++) {
+
+            if(j * j == i) {
+                printf("%d\n", i);
+
+                count++;
+
+                if(largest == 0) {
+                    largest = i;
+                }
+
+                smallest = i;
+            }
+        }
+    }
+
+    printf("Count: %d\n", count);
+    printf("Largest Perfect Square: %d\n", largest);
+    printf("Smallest Perfect Square: %d\n", smallest);
+
+    return 0;
+}
