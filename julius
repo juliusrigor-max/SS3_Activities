@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PHP Conditional Statements Demo</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            background: linear-gradient(135deg,#4facfe,#00f2fe);
+            padding:40px;
+        }
+
+        .container{
+            width:700px;
+            margin:auto;
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            text-align:center;
+            color:#333;
+        }
+
+        .box{
+            margin:20px 0;
+            padding:15px;
+            border-left:6px solid #4facfe;
+            background:#f4f8ff;
+        }
+
+        hr{
+            margin:25px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>PHP Conditional Statements Activity</h1>
+
+<div class="box">
+<h3>Guess the Secret Number</h3>
+
+<?php
+
+$secretNumber = 250;
+$guess = 150;
+
+if ($secretNumber == $guess) {
+    echo "<p>🎉 Congratulations! You guessed the correct number!</p>";
+}else{
+    echo "<p>❌ Sorry, better luck next time.</p>";
+}
+
+?>
+
+</div>
+
+<hr>
+
+<div class="box">
+<h3>Compare Two Numbers</h3>
+
+<?php
+
+$a = 10;
+$b = 25;
+
+if ($a > $b) {
+    echo "$a is bigger than $b";
+    $b = $a;
+    echo "<br>New value of b: $b";
+}else{
+    echo "$a is not bigger than $b";
+}
+
+?>
+
+</div>
+
+<hr>
+
+<div class="box">
+<h3>Guessing Game (With Hint)</h3>
+
+<?php
+
+$secretNumber = 250;
+$guess = 246;
+
+if ($secretNumber == $guess) {
+    echo "<p>🎉 Congratulations! You guessed the correct number!</p>";
+}elseif(abs($guess - $secretNumber) < 10){
+    echo "<p>🔥 You're Getting Close!</p>";
+}else{
+    echo "<p>❌ Sorry, better luck next time!</p>";
+}
+
+?>
+
+</div>
+
+<hr>
+
+<div class="box">
+<h3>Website Category</h3>
+
+<?php
+
+$category = "hi";
+
+switch($category) {
+
+case "news":
+    print "<p>📰 What's happening around the World</p>";
+    break;
+
+case "weather":
+    print "<p>🌦 Your weekly forecast</p>";
+    break;
+
+case "sports":
+    print "<p>🏀 Latest sports highlights</p>";
+    break;
+
+default:
+    print "<p>🏠 Welcome to my Web site</p>";
+
+}
+
+?>
+
+</div>
+
+</div>
+
+</body>
+</html>
